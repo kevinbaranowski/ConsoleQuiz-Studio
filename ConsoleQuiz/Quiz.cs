@@ -9,6 +9,22 @@ public class Quiz
     public void AddQuestion(Question question)
     {
         Questions.Add(question);
+        question.QuestionNumber = Questions.IndexOf(question) + 1;
+    }
+
+    public void ScoreQuiz()
+    {
+        double numberCorrect = 0;
+        double numQuizQuestions = Questions.Count;
+        foreach (Question question in Questions)
+        {
+            if (question.Correct)
+            {
+                numberCorrect++;
+            }
+        }
+        Score = numberCorrect / numQuizQuestions;
+        Console.WriteLine($"You earned a score of {numberCorrect} out of {numQuizQuestions}!");
     }
 
     public void RunQuiz()

@@ -8,13 +8,13 @@ public class MultipleChoice : Question
     public string UserAnswer { get; set; } = "";
     public string CorrectAnswer { get; set; }
 
-    public MultipleChoice(string prompt, int questionNumber, Dictionary<int, string> options, string correctAnswer) : base(prompt, questionNumber)
+    public MultipleChoice(string prompt, Dictionary<int, string> options, string correctAnswer) : base(prompt)
     {
         Options = options;
         CorrectAnswer = correctAnswer;
     }
 
-    public void setUserAnswer(string userInput)
+    public void SetUserAnswer(string userInput)
     {
         UserAnswer = userInput;
     }

@@ -5,9 +5,10 @@ public abstract class Question
     public string Prompt { get; set;}
     public int QuestionNumber { get; set; }
 
-    public Question(string prompt, int questionNumber)
+    public bool Correct { get; set; }
+
+    public Question(string prompt)
     {
         Prompt = prompt;
-        QuestionNumber = questionNumber;
     }
 }
