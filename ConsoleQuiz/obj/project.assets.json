@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ritab\\.nuget\\packages\\": {}
+    "/Users/sonnienguyen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ritab\\Desktop\\LaunchCode_cs\\QuizStudio\\ConsoleQuiz\\ConsoleQuiz.csproj",
+      "projectUniqueName": "/Users/sonnienguyen/Desktop/LaunchCode/QuizStudio/ConsoleQuiz-Studio/ConsoleQuiz/ConsoleQuiz.csproj",
       "projectName": "ConsoleQuiz",
-      "projectPath": "C:\\Users\\ritab\\Desktop\\LaunchCode_cs\\QuizStudio\\ConsoleQuiz\\ConsoleQuiz.csproj",
-      "packagesPath": "C:\\Users\\ritab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ritab\\Desktop\\LaunchCode_cs\\QuizStudio\\ConsoleQuiz\\obj\\",
+      "projectPath": "/Users/sonnienguyen/Desktop/LaunchCode/QuizStudio/ConsoleQuiz-Studio/ConsoleQuiz/ConsoleQuiz.csproj",
+      "packagesPath": "/Users/sonnienguyen/.nuget/packages/",
+      "outputPath": "/Users/sonnienguyen/Desktop/LaunchCode/QuizStudio/ConsoleQuiz-Studio/ConsoleQuiz/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ritab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/sonnienguyen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

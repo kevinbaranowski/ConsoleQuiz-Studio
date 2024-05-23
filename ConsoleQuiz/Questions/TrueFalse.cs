@@ -9,18 +9,25 @@ public class TF : Question
 
     string CorrectAnswer { get; set; }
     string UserAnswer { get; set; }
+ 
     public TF (string prompt, string correctAnswer) : base(prompt)
     {
         CorrectAnswer = correctAnswer;
+        Prompt = prompt;
     }
     public override void SetUserAnswer()
     {
+        bool IsValidAnswer = false;
         do 
         {
             Console.WriteLine("Type in T or F.");
             UserAnswer = Console.ReadLine()!;
+            if(UserAnswer.ToLower() == "f" || UserAnswer.ToLower() == "t")
+            {
+                IsValidAnswer = true;
+            }
         }
-        while(UserAnswer.ToLower() != "f" || UserAnswer.ToLower() != "t" );
+        while(!IsValidAnswer);
     }
     public override void GradeQuestion()
     {
