@@ -28,6 +28,7 @@ public class TF : Question
             }
         }
         while(!IsValidAnswer);
+        GradeQuestion();
     }
     public override void GradeQuestion()
     {
