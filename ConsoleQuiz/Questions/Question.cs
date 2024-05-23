@@ -11,4 +11,6 @@ public abstract class Question
     {
         Prompt = prompt;
     }
+    public abstract void SetUserAnswer();
+    public abstract void GradeQuestion();
 }

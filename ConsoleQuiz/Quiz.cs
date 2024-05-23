@@ -2,9 +2,14 @@ namespace ConsoleQuiz;
 
 public class Quiz
 {
+    public string QuizName { get; set; }
     public List<Question> Questions = [];
-    public double Score {get; set; }
+    public double Score { get; set; }
 
+    public Quiz(string quizName)
+    {
+        QuizName = quizName;
+    }
 
     public void AddQuestion(Question question)
     {

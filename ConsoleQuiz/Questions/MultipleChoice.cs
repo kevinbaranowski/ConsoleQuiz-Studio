@@ -5,18 +5,34 @@ namespace ConsoleQuiz;
 public class MultipleChoice : Question
 {
     public Dictionary<int, string> Options { get; set; }
-    public string UserAnswer { get; set; } = "";
-    public string CorrectAnswer { get; set; }
+    public string UserAnswer { get; set; }
+    public Dictionary<int, string> CorrectAnswer { get; set; }
 
-    public MultipleChoice(string prompt, Dictionary<int, string> options, string correctAnswer) : base(prompt)
+    public MultipleChoice(string prompt, Dictionary<int, string> options, Dictionary<int, string> correctAnswer) : base(prompt)
     {
         Options = options;
         CorrectAnswer = correctAnswer;
     }
 
-    public void SetUserAnswer(string userInput)
+    public override void SetUserAnswer()
     {
-        UserAnswer = userInput;
+        Console.WriteLine("");
+        string answer = Console.ReadLine()!;
+        if (answer != "")
+        {
+            UserAnswer = answer;
+        }
+    
+    }
+    public override void GradeQuestion()
+    {
+        if (!CorrectAnswer.ContainsKey(int.Parse(UserAnswer)))
+        {
+            Correct = true;
+        } 
+        else {
+            Correct = false;
+        }
     }
 
     public override string ToString()

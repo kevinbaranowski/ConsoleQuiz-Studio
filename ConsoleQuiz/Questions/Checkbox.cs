@@ -12,7 +12,7 @@ public class Checkbox : Question
         Options = options;
         CorrectAnswers = correctAnswers;
     }
-    public void CollectUserAnswers()
+    public override void SetUserAnswer()
     {
         List<string> userInput = [];
         bool condition = true;
@@ -33,7 +33,7 @@ public class Checkbox : Question
         UserAnswers = userInput;
     }
     
-    public void GradeQuestion()
+    public override void GradeQuestion()
     {
         bool IsAllCorrect = true;
         foreach (string userAnswer in UserAnswers)
